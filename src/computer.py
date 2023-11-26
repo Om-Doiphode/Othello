@@ -47,7 +47,7 @@ class ComputerPlayer:
                 for tile in swappableTiles:
                     newGrid[tile[0]][tile[1]]=player
 
-                    bMove, value=self.computerHard(newGrid,depth-1,alpha,beta,player)
+                    bMove, value=self.computerHard(newGrid,depth-1,alpha,beta,player*-1)
 
                     if value<bestScore:
                         bestScore=value
