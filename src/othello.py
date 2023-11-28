@@ -70,7 +70,7 @@ class Othello:
     def update(self):
         if self.currentPlayer == -1:
             new_time = pygame.time.get_ticks()
-            if new_time - self.time >= 1000:
+            if new_time - self.time >= 2000:
                 if not self.grid.findAvailMoves(self.grid.gridLogic, self.currentPlayer):
                     self.gameOver = True
                     return
